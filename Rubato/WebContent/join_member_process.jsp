@@ -16,7 +16,7 @@
 	
 	//DB 연동 INSERT(update,dlete)
 	
-	String query = "INSERT INTO JSP_MEMBER VALUES(JSP_MEMBER_seq.nextval,'"+id+"','"+pw+"','"+nick+"','"+phone+"',SYSDATE)";
+	String query = "INSERT INTO RUBATO_MEMBER VALUES(RUBATO_MEMBER_seq.nextval,'"+id+"','"+pw+"','"+nick+"','"+phone+"',SYSDATE)";
 	System.out.println("[테스트 실행될 쿼리]" + query);
 	
 	//라이브러리 동적 모드

@@ -8,7 +8,7 @@
 	String pw = request.getParameter("pw");
 
 	//DB 연동 SELECT ....
-	String query = "SELECT * FROM JSP_MEMBER WHERE m_id = '"+id+"' AND m_pw = '"+pw+"'";
+	String query = "SELECT * FROM RUBATO_MEMBER WHERE m_id = '"+id+"' AND m_pw = '"+pw+"'";
 	System.out.println("[테스트 실행될 쿼리]" + query);
 	
 	//라이브러리 동적 모드
@@ -36,7 +36,7 @@
 		session.setAttribute("sessionNo", m_no);
 		session.setAttribute("sessionNick", m_nick);
 		
-		response.sendRedirect("./main_page.jsp");
+		response.sendRedirect("./index.jsp");
 	}else{
 		//로그인 실패...
 		response.sendRedirect("./login_fail.jsp");
